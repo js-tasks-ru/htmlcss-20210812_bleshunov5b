@@ -1,8 +1,4 @@
 /* Стилизация главной страницы */
-.header__title {
-  margin: 96px 0 77px 0;
-}
-
 .page__box {
   max-width: 1120px;
   width: 100%;
