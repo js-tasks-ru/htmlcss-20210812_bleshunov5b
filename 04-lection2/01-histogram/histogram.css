@@ -24,7 +24,7 @@
   color: var(--black);
 }
 
-.histogram__button {
+.histogram__link {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -32,7 +32,7 @@
   cursor: pointer;
 }
 
-.histogram__button:hover {
+.histogram__link:hover {
   text-decoration: underline;
 }
 
@@ -51,5 +51,5 @@
 }
 
 .histogram__bar:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
