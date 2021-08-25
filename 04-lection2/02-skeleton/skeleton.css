@@ -22,6 +22,14 @@
   flex-shrink: 0; /* Аватар не будет сжиматься */
 }
 
+.skeleton__top-bar-section {
+  width: 100%;
+}
+
+.skeleton__bottom-bar-section {
+  
+}
+
 .skeleton__bar {
   background: linear-gradient(
     92.51deg,
