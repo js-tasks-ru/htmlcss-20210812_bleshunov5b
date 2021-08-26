@@ -1,0 +1,48 @@
+/* Стилизация шаблона страницы элемента */
+.template {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:  "header"
+                        "main"
+                        "footer";
+  height: 100%;
+}
+
+.template__header {
+  grid-area: header;
+}
+
+.template__main {
+  grid-area: main;
+}
+
+.template__main-grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "sidebar preview";
+}
+
+.template__sidebar {
+  grid-area: sidebar;
+  justify-items: stretch;
+}
+
+.component-preview {
+  grid-area: preview;
+}
+
+.template__component-preview {
+  width: 825px;
+  height: 782px;
+  z-index: 1;
+}
+
+.template__footer {
+  grid-area: footer;
+}
+
+.template__box {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
