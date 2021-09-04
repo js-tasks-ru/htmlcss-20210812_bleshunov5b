@@ -9,6 +9,7 @@
 
 .tabs__scroller {
   display: flex;
+  flex-wrap: wrap; /* на первое время, чтобы избежать горизонтального скролла*/
   gap: 40px;
 }
 
@@ -23,28 +24,28 @@
 .tabs__backend#all:checked ~ .tabs__frame-all {
   display: block;
 }
-.tabs__backend#elements:checked ~ .tabs__frame-elements {
+.tabs__backend#atoms:checked ~ .tabs__frame-atoms {
   display: block;
 }
-.tabs__backend#containers:checked ~ .tabs__frame-containers {
+.tabs__backend#molecules:checked ~ .tabs__frame-molecules {
   display: block;
 }
-.tabs__backend#templates:checked ~ .tabs__frame-templates {
+.tabs__backend#organisms:checked ~ .tabs__frame-organisms {
   display: block;
 }
 
-.tabs__backend#all:checked ~ .tabs__scroller .tabs__all {
+.tabs__backend#all:checked ~ .page__box .tabs__all {
   border-bottom: 5px solid var(--grey-8);
 }
 
-.tabs__backend#elements:checked ~ .tabs__scroller .tabs__elements {
+.tabs__backend#atoms:checked ~ .page__box .tabs__atoms {
   border-bottom: 5px solid var(--grey-8);
 }
 
-.tabs__backend#containers:checked ~ .tabs__scroller .tabs__containers {
+.tabs__backend#molecules:checked ~ .page__box .tabs__molecules {
   border-bottom: 5px solid var(--grey-8);
 }
 
-.tabs__backend#templates:checked ~ .tabs__scroller .tabs__templates {
+.tabs__backend#organisms:checked ~ .page__box .tabs__organisms {
   border-bottom: 5px solid var(--grey-8);
 }
