@@ -9,6 +9,7 @@
 @import '../../components/card/card.css';
 @import '../../components/component_preview/component_preview.css';
 @import '../../components/template/template.css';
+@import '../../components/tabs/tabs.css';
 
 
 :root {
@@ -29,6 +30,7 @@
     --grey-5: #F9FAFC;
     --grey-6: #90A0B7;
     --grey-7: rgba(102, 102, 102, 0.5); /* Полупрозрачный */
+    --grey-8: #212429;
 
 
 

@@ -1,0 +1,50 @@
+.tabs__backend {
+  opacity: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  outline: none;
+}
+
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+}
+
+.tabs__label {
+  padding: 8px;
+}
+
+.tabs__frame {
+  display: none;
+}
+
+.tabs__backend#all:checked ~ .tabs__frame-all {
+  display: block;
+}
+.tabs__backend#elements:checked ~ .tabs__frame-elements {
+  display: block;
+}
+.tabs__backend#containers:checked ~ .tabs__frame-containers {
+  display: block;
+}
+.tabs__backend#templates:checked ~ .tabs__frame-templates {
+  display: block;
+}
+
+.tabs__backend#all:checked ~ .tabs__scroller .tabs__all {
+  border-bottom: 5px solid var(--grey-8);
+}
+
+.tabs__backend#elements:checked ~ .tabs__scroller .tabs__elements {
+  border-bottom: 5px solid var(--grey-8);
+}
+
+.tabs__backend#containers:checked ~ .tabs__scroller .tabs__containers {
+  border-bottom: 5px solid var(--grey-8);
+}
+
+.tabs__backend#templates:checked ~ .tabs__scroller .tabs__templates {
+  border-bottom: 5px solid var(--grey-8);
+}
