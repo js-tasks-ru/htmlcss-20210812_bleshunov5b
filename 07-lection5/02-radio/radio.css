@@ -48,7 +48,7 @@
 
 .radio__backend:disabled + .radio__visible .radio__frontend {
   background-color: var(--grey-2);
-  border: 2px solid var(--grey-2);
+  border-color: var(--grey-2);
 }
 
 .radio__backend:disabled + .radio__visible .radio__label {
