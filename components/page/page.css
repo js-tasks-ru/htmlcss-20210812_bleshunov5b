@@ -15,27 +15,16 @@
   margin: 0 16px;
 }
 
-.card_wide {
-  grid-column: auto;
-}
-
 /* TABLET */
 @media screen and (min-width: 400px) {
   .main__preview {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
-
-  .card_wide {
-    grid-column: 1 / span 2;
-  }
 }
 
 /* WIDE TABLET */
 @media screen and (min-width: 670px) {
-  .card_wide {
-    grid-column: auto;
-  }
 }
 
 /* DESKTOP */
@@ -50,9 +39,5 @@
     max-width: 1110px;
     width: 100%;
     margin: 0 auto;
-  }
-
-  .card_wide {
-    grid-column: auto;
   }
 }
