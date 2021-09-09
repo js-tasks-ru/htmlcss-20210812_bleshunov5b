@@ -22,7 +22,7 @@
   place-items: center left;
   padding: 0 2px;
   width: 52px;
-  height: 30px;
+  height: 28px;
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 16px;
@@ -48,7 +48,7 @@
 .toggler__backend:checked + .toggler__visible .toggler__frontend {
   background-color: var(--primary);
   place-items: center right;
-  border: 1px solid var(--primary);
+  border-color: var(--primary);
 }
 
 .toggler__backend:checked + .toggler__visible .toggler__frontend:before {
