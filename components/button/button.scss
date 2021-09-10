@@ -1,0 +1,46 @@
+.button {
+  display: inline-block;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: $bf-roboto;
+  font-weight: 500;
+  font-size: 16px;
+
+  &_primary {
+    background-color: $primary;
+    color: $white;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+
+  &_secondary {
+    background-color: $secondary;
+    color: $white;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: $secondary-hover;
+    }
+  }
+
+  &_alternate {
+    background-color: $white;
+    color: $black;
+    border: $bb $grey-3;
+    transition: border 200ms ease-in-out;
+
+    &:hover {
+      border: $bb $black;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}

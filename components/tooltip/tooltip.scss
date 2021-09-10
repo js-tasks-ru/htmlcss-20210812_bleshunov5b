@@ -1,0 +1,45 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+
+  &__icon {
+    display: inline-block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    &:hover + .tooltip__bubble {
+      display: inline-block;
+    }
+  }
+
+  &__bubble {
+    display: none;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border-radius: 10px;
+    background-color: $blue-1;
+    color: $grey-2;
+    padding: 13px 21px 8px;
+    white-space: nowrap;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      border-top: 6px solid $blue-1;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,46 @@
+.accordion {
+  font-family: $bf-inter;
+
+  &__item {
+    position: relative;
+    border: $bb $grey-3;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 24px 32px 0;
+
+    &[open] {
+      padding: 24px 32px 32px;
+
+      .accordion__arrow {
+        transform: rotate(180deg);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 32px;
+    width: 18px;
+    height: 10px;
+  }
+
+  &__summary {
+    list-style: none;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+    cursor: pointer;
+  }
+
+  &__content {
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey-4;
+    line-height: 24px;
+  }
+}
