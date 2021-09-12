@@ -45,4 +45,12 @@
   &__title {
     margin-bottom: 6px;
   }
+
+  &__link {
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

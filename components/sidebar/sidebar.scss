@@ -18,13 +18,27 @@
   }
 
   &__link {
+    text-decoration: none;
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     margin-bottom: 4px;
+    color: $black;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_current {
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

@@ -1,0 +1,10 @@
+.page__box {
+  margin: 0 16px; }
+  @media screen and (min-width: 1110px) {
+    .page__box {
+      max-width: 1110px;
+      width: 100%;
+      margin: 0 auto; } }
+
+.page__toggler, .page__checkbox, .page__radio {
+  padding: 2px; }

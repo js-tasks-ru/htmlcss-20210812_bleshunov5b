@@ -1,5 +1,6 @@
 $white:     #fff;
 $black:     #212429;
+$deep-black: #000;
 $pink:      #F784AD;
 $purple-1:  #7048E8;
 $purple-2:  #5028C6;
@@ -30,8 +31,8 @@ $bf-roboto: 'Roboto', 'Inter', sans-serif;
 
 $bb: 1px solid; /* border-base */
 
-@import './reset.css';
-@import '../fonts/fonts.css';
+@import './reset.scss';
+@import '../fonts/fonts.scss';
 
 @import '../../components/page/page.scss';
 @import '../../components/template/template.scss';
@@ -52,6 +53,10 @@ $bb: 1px solid; /* border-base */
 @import '../../components/skeleton/skeleton.scss';
 @import '../../components/logo/logo.scss';
 @import '../../components/tabs/tabs.scss';
+@import '../../components/input/input.scss';
+@import '../../components/toggler/toggler.scss';
+@import '../../components/checkbox/checkbox.scss';
+@import '../../components/radio/radio.scss';
 
 * {
     font-family: $bf-inter;

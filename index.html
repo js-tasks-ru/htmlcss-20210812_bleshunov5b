@@ -3,6 +3,7 @@
 <html lang="ru">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="./build/main.css" /> -->
         <link rel="stylesheet" href="./build/index.min.css" />
     </head>
     <body class="page">
@@ -49,8 +50,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Tooltip</h3>
-                      <p class="card__subtitle">Container</p>
+                      <a class="card__link" href="./pages/tooltip.html"><h3 class="card__title">Tooltip</h3></a>
+                      <p class="card__subtitle">Atom</p>
                     </div>
                   </div>
 
@@ -108,12 +109,12 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Calendar</h3>
-                      <p class="card__subtitle">Container</p>
+                      <a class="card__link" href="./pages/calendar.html"><h3 class="card__title">Calendar</h3></a>
+                      <p class="card__subtitle">Molecules</p>
                     </div>
                   </div>
 
-                  <!-- Buttons -->
+                  <!-- Button -->
                   <div class="card">
                     <div class="card__content">
                       <button class="button button_primary">Primary</button>
@@ -121,8 +122,8 @@
                       <button class="button button_alternate">Alternate</button>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Modal dialog</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/button.html"><h3 class="card__title">Button</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
 
@@ -172,8 +173,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Histogram</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/histogram.html"><h3 class="card__title">Histogram</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
 
@@ -193,8 +194,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/avatar.html"><h3 class="card__title">Avatar</h3></a>
+                      <p class="card__subtitle">Atom</p>
                     </div>
                   </div>
 
@@ -221,8 +222,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/accordion.html"><h3 class="card__title">Accordion</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
 
@@ -244,8 +245,132 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/skeleton.html"><h3 class="card__title">Skeleton</h3></a>
+                      <p class="card__subtitle">Molecules</p>
+                    </div>
+                  </div>
+
+                  <!-- Custom Form Elements -->
+                  <div class="card">
+                    <div class="card__content">
+                      <div>
+                        <label class="radio page__radio">
+                          <input class="radio__backend" type="radio" name="test" />
+                          <div class="radio__visible">
+                            <div class="radio__frontend"></div>
+                            <div class="radio__label">Radio</div>
+                          </div>
+                        </label>
+                        <label class="radio page__radio">
+                          <input class="radio__backend" type="radio" name="test" />
+                          <div class="radio__visible">
+                            <div class="radio__frontend"></div>
+                            <div class="radio__label">Radio</div>
+                          </div>
+                        </label>
+                      </div>
+                      <div>
+                        <label class="checkbox page__checkbox">
+                          <input class="checkbox__backend" type="checkbox" />
+                          <div class="checkbox__visible">
+                            <div class="checkbox__frontend">
+                              <svg class="checkbox__icon">
+                                <use xlink:href="../../assets/public/svg/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                            <span class="checkbox__label">Checkbox</span>
+                          </div>
+                        </label>
+                        <label class="checkbox page__checkbox">
+                          <input class="checkbox__backend" type="checkbox" />
+                          <div class="checkbox__visible">
+                            <div class="checkbox__frontend">
+                              <svg class="checkbox__icon">
+                                <use xlink:href="../../assets/public/svg/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                            <span class="checkbox__label">Checkbox</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div>
+                        <label class="toggler page__toggler">
+                          <input class="toggler__backend" type="checkbox" />
+                          <div class="toggler__visible">
+                            <div class="toggler__frontend"></div>
+                            <span class="toggler__label">Toggler</span>
+                          </div>
+                        </label>
+                        <label class="toggler page__toggler">
+                          <input class="toggler__backend" type="checkbox" />
+                          <div class="toggler__visible">
+                            <div class="toggler__frontend"></div>
+                            <span class="toggler__label">Toggler</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <a class="card__link" href="./pages/custom-form-elements.html"><h3 class="card__title">Custom Form Elements</h3></a>
+                      <p class="card__subtitle">Atom</p>
+                    </div>
+                  </div>
+
+                  <!-- Inputs -->
+                  <div class="card card_wide">
+                    <div class="card__content">
+                      <label class="input">
+                        <div class="input__label">Disabled</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Disabled" disabled />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input">
+                        <div class="input__label">Text</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Text" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input input_success">
+                        <div class="input__label">Success</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Success" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input input_invalid">
+                        <div class="input__label">Invalid</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Invalid" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="card__info">
+                      <a class="card__link" href="./pages/custom-inputs.html"><h3 class="card__title">Custom Inputs</h3></a>
+                      <p class="card__subtitle">Atom</p>
                     </div>
                   </div>
 
@@ -271,8 +396,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Tooltip</h3>
-                      <p class="card__subtitle">Container</p>
+                      <a class="card__link" href="./pages/tooltip.html"><h3 class="card__title">Tooltip</h3></a>
+                      <p class="card__subtitle">Atom</p>
                     </div>
                   </div>
 
@@ -292,12 +417,136 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/avatar.html"><h3 class="card__title">Avatar</h3></a>
+                      <p class="card__subtitle">Atom</p>
                     </div>
                   </div>
 
-                  <!-- Buttons -->
+                  <!-- Custom Form Elements -->
+                  <div class="card">
+                    <div class="card__content">
+                      <div>
+                        <label class="radio page__radio">
+                          <input class="radio__backend" type="radio" name="test" />
+                          <div class="radio__visible">
+                            <div class="radio__frontend"></div>
+                            <div class="radio__label">Radio</div>
+                          </div>
+                        </label>
+                        <label class="radio page__radio">
+                          <input class="radio__backend" type="radio" name="test" />
+                          <div class="radio__visible">
+                            <div class="radio__frontend"></div>
+                            <div class="radio__label">Radio</div>
+                          </div>
+                        </label>
+                      </div>
+                      <div>
+                        <label class="checkbox page__checkbox">
+                          <input class="checkbox__backend" type="checkbox" />
+                          <div class="checkbox__visible">
+                            <div class="checkbox__frontend">
+                              <svg class="checkbox__icon">
+                                <use xlink:href="../../assets/public/svg/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                            <span class="checkbox__label">Checkbox</span>
+                          </div>
+                        </label>
+                        <label class="checkbox page__checkbox">
+                          <input class="checkbox__backend" type="checkbox" />
+                          <div class="checkbox__visible">
+                            <div class="checkbox__frontend">
+                              <svg class="checkbox__icon">
+                                <use xlink:href="../../assets/public/svg/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                            <span class="checkbox__label">Checkbox</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div>
+                        <label class="toggler page__toggler">
+                          <input class="toggler__backend" type="checkbox" />
+                          <div class="toggler__visible">
+                            <div class="toggler__frontend"></div>
+                            <span class="toggler__label">Toggler</span>
+                          </div>
+                        </label>
+                        <label class="toggler page__toggler">
+                          <input class="toggler__backend" type="checkbox" />
+                          <div class="toggler__visible">
+                            <div class="toggler__frontend"></div>
+                            <span class="toggler__label">Toggler</span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <a class="card__link" href="./pages/custom-form-elements.html"><h3 class="card__title">Custom Form Elements</h3></a>
+                      <p class="card__subtitle">Atom</p>
+                    </div>
+                  </div>
+
+                  <!-- Inputs -->
+                  <div class="card card_wide">
+                    <div class="card__content">
+                      <label class="input">
+                        <div class="input__label">Disabled</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Disabled" disabled />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input">
+                        <div class="input__label">Text</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Text" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input input_success">
+                        <div class="input__label">Success</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Success" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                      <label class="input input_invalid">
+                        <div class="input__label">Invalid</div>
+                        <div class="input__field-wrapper">
+                          <input class="input__field" type="text" placeholder="Invalid" />
+                          <svg class="input__icon input__icon_success">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#success"></use>
+                          </svg>
+                          <svg class="input__icon input__icon_invalid">
+                            <use xlink:href="../../assets/public/svg/sprite.svg#invalid"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="card__info">
+                      <a class="card__link" href="./pages/custom-inputs.html"><h3 class="card__title">Custom Inputs</h3></a>
+                      <p class="card__subtitle">Atom</p>
+                    </div>
+                  </div>
+
+                  <!-- Button -->
                   <div class="card">
                     <div class="card__content">
                       <button class="button button_primary">Primary</button>
@@ -305,10 +554,11 @@
                       <button class="button button_alternate">Alternate</button>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Modal dialog</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/button.html"><h3 class="card__title">Button</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </main>
@@ -371,12 +621,11 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Calendar</h3>
-                      <p class="card__subtitle">Container</p>
+                      <a class="card__link" href="./pages/calendar.html"><h3 class="card__title">Calendar</h3></a>
+                      <p class="card__subtitle">Molecules</p>
                     </div>
                   </div>
-
-                  <!-- Skeleton -->
+  <!-- Skeleton -->
                   <div class="card card_wide">
                     <div class="card__content">
                       <div class="skeleton">
@@ -394,8 +643,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/skeleton.html"><h3 class="card__title">Skeleton</h3></a>
+                      <p class="card__subtitle">Molecules</p>
                     </div>
                   </div>
                 </div>
@@ -430,8 +679,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Modal dialog</h3>
-                      <p class="card__subtitle">Container</p>
+                      <a class="card__link" href="./pages/modal-dialog.html"><h3 class="card__title">Modal Dialog</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
 
@@ -481,11 +730,10 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Histogram</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/histogram.html"><h3 class="card__title">Histogram</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
-
                   <!-- Accordion -->
                   <div class="card card_wide">
                     <div class="card__content">
@@ -509,8 +757,8 @@
                       </div>
                     </div>
                     <div class="card__info">
-                      <h3 class="card__title">Avatar</h3>
-                      <p class="card__subtitle">Subtitle</p>
+                      <a class="card__link" href="./pages/accordion.html"><h3 class="card__title">Accordion</h3></a>
+                      <p class="card__subtitle">Organisms</p>
                     </div>
                   </div>
                 </div>
