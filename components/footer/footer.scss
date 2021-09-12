@@ -1,0 +1,38 @@
+.footer {
+  &_white {
+    background-color: $white;
+  }
+
+  &__info {
+    padding: 71px 0 136px;
+  }
+
+  &__title {
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    max-width: 640px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: auto;
+  }
+
+  &_grey {
+    background-color: $grey-5;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 56px 0;
+  }
+}

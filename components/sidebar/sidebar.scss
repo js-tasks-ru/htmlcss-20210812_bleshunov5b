@@ -1,0 +1,44 @@
+.sidebar {
+  background-color: $grey-5;
+
+  &__block {
+    padding-bottom: 32px;
+    background-color: inherit;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: $black;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_current {
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

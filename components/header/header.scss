@@ -1,0 +1,39 @@
+.header {
+  padding-top: 25px;
+
+  &_white {
+    background-color: $white;
+  }
+
+  &_grey {
+    background-color: $grey-5;
+  }
+
+  &__logo {
+    text-align: center;
+    width: 110px;
+    height: 32px;
+
+    @media screen and (min-width: 670px) {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $deep-black;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1110px) {
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 38px;
+      padding: 40px 0;
+    }
+  }
+}

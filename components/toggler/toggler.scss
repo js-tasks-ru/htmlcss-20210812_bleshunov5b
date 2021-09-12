@@ -1,0 +1,61 @@
+.toggler {
+  cursor: pointer;
+  display: block;
+
+  &__backend {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    outline: none;
+  }
+
+  &__visible {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__frontend {
+    display: grid;
+    place-items: center left;
+    padding: 0 2px;
+    width: 52px;
+    height: 28px;
+    background-color: $white;
+    border: $bb $grey-2;
+    border-radius: 16px;
+
+    &:before {
+      content: '';
+      display: block;
+      background-color: $grey-2;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.toggler__backend:disabled + .toggler__visible .toggler__frontend {
+  background-color: $grey-2;
+}
+
+.toggler__backend:disabled + .toggler__visible .toggler__frontend:before {
+  background-color: $grey-3;
+}
+
+.toggler__backend:checked + .toggler__visible .toggler__frontend {
+  background-color: $primary;
+  place-items: center right;
+  border-color: $primary;
+}
+
+.toggler__backend:checked + .toggler__visible .toggler__frontend:before {
+  background-color: $white;
+}
+
+.toggler__backend:focus + .toggler__visible .toggler__label {
+  text-decoration: underline;
+}

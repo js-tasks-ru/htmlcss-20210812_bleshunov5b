@@ -1,0 +1,68 @@
+.calendar {
+  max-width: 305px;
+  padding: 28px 30px 40px 30px;
+  background-color: $white;
+  border: $bb $grey-3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+
+  &__flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__padding-box {
+    position: relative;
+    padding-bottom: 85%;
+  }
+
+  &__grid-box {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: grid;
+    grid-template: repeat(6, 16.5%) / repeat(7, 14.3%);
+    align-items: center;
+  }
+
+  &__month {
+    grid-column: 1 / -1;
+    font-weight: 600;
+    color: $blue-3;
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  &__day {
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: $grey-6;
+    line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    font-weight: 400;
+    background-color: $white;
+    color: $blue-3;
+    line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+
+    &_selected {
+      background-color: $blue-1;
+      color: $white;
+    }
+
+    &_selected-between {
+      background-color: $blue-4;
+      color: $blue-3;
+    }
+  }
+}

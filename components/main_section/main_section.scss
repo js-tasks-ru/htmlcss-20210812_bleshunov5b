@@ -1,0 +1,30 @@
+.main {
+  background-color: $grey-5;
+
+  &_borders {
+    background-color: $grey-5;
+    border-top: $bb $grey-2;
+    border-bottom: $bb $grey-2;
+  }
+
+  &__preview {
+    display: grid;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+
+    @media screen and (min-width: 400px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: 1110px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      padding: 64px 0;
+    }
+  }
+}
